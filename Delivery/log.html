@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+          }
+          th, td {
+            text-align: left;
+            padding: 0.5rem;
+            border: 1px solid black;
+          }
+          
+          th {
+            background-color: #ddd;
+            width: 1%;
+          }
+      
+          tr:nth-child(even) {
+            background-color: #f2f2f2;
+          }
+      </style>
+    </head>
+    <body>
+
+    <table>
+  <tr>
+    <th></th>
+    <th>Product</th>
+    <th>Order Amount</th>
+    <th>Weekly Usage:</th>
+    <th>Price</th>
+    <th>Stock Level</th>
+    <th>Stock Level by Wednesday</th>
+    <th>Stock Level by Friday</th>
+    <th>Last order Invoiced</th>
+
+  </tr>
+<tr>
+                <td>1</td>
+                <td>CHICKEN ORIGINAL</td>
+                <td>4</td>
+                <td>20.47</td>
+                <td>57.09</td>
+                <td>7.9</td>
+                <td>3.19</td>
+                <td>-1.53</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>2</td>
+                <td>SALAD ICEBERG</td>
+                <td>1</td>
+                <td>3.26</td>
+                <td>10.99</td>
+                <td>1.99</td>
+                <td>1.24</td>
+                <td>0.49</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>3</td>
+                <td>LETTUCE APOLLO MIX</td>
+                <td>1</td>
+                <td>1.51</td>
+                <td>6.06</td>
+                <td>1</td>
+                <td>0.65</td>
+                <td>0.30</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>4</td>
+                <td>WHITE CHOCLATE PIECES (Milkybar)</td>
+                <td>1</td>
+                <td>0.15</td>
+                <td>25.66</td>
+                <td>0.07</td>
+                <td>0.04</td>
+                <td>0.00</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>5</td>
+                <td>PICKLED SLAW</td>
+                <td>1</td>
+                <td>5.20</td>
+                <td>6.9</td>
+                <td>3.01</td>
+                <td>1.81</td>
+                <td>0.62</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>6</td>
+                <td>BEANS LARGE PREPOTTED</td>
+                <td>2</td>
+                <td>1.77</td>
+                <td>29.75</td>
+                <td>0.45</td>
+                <td>0.04</td>
+                <td>-0.37</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>7</td>
+                <td>BEANS REGULAR PREPOTTED</td>
+                <td>1</td>
+                <td>3.13</td>
+                <td>22.48</td>
+                <td>2.43</td>
+                <td>1.71</td>
+                <td>0.99</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>8</td>
+                <td>FLOUR 3 STEP</td>
+                <td>6</td>
+                <td>19.07</td>
+                <td>8.64</td>
+                <td>8.95</td>
+                <td>4.56</td>
+                <td>0.17</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>9</td>
+                <td>ICE CREAM MIX LS</td>
+                <td>1</td>
+                <td>0.69</td>
+                <td>22.13</td>
+                <td>0.65</td>
+                <td>0.49</td>
+                <td>0.33</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>10</td>
+                <td>MILK MILLAC MAID (MILK POT)</td>
+                <td>1</td>
+                <td>0.00</td>
+                <td>10.88</td>
+                <td>0</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>11</td>
+                <td>SAUCE CHOCOLATE (KRUSHEMS + SUNDAE)</td>
+                <td>1</td>
+                <td>0.10</td>
+                <td>34.88</td>
+                <td>0.15</td>
+                <td>0.13</td>
+                <td>0.10</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>12</td>
+                <td>TOPPING OREO CRUMB</td>
+                <td>1</td>
+                <td>0.12</td>
+                <td>20.76</td>
+                <td>0.07</td>
+                <td>0.04</td>
+                <td>0.01</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>13</td>
+                <td>SAUCE KANSAS BBQ (BITES)</td>
+                <td>1</td>
+                <td>0.77</td>
+                <td>20.08</td>
+                <td>1.01</td>
+                <td>0.83</td>
+                <td>0.66</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>14</td>
+                <td>COFFEE BEAN (KB)</td>
+                <td>1</td>
+                <td>0.01</td>
+                <td>69.34</td>
+                <td>0.06</td>
+                <td>0.06</td>
+                <td>0.06</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>15</td>
+                <td>STRAWS PAPER (6mm)</td>
+                <td>1</td>
+                <td>0.08</td>
+                <td>40.85</td>
+                <td>0.07</td>
+                <td>0.05</td>
+                <td>0.03</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>16</td>
+                <td>CARRIER 2 CUP</td>
+                <td>1</td>
+                <td>0.34</td>
+                <td>22.93</td>
+                <td>0.16</td>
+                <td>0.08</td>
+                <td>0.00</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>17</td>
+                <td>CUP 16OZ</td>
+                <td>1</td>
+                <td>0.36</td>
+                <td>39.35</td>
+                <td>-0.03</td>
+                <td>0.00</td>
+                <td>-0.08</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>18</td>
+                <td>WETNAPS</td>
+                <td>1</td>
+                <td>0.75</td>
+                <td>36.12</td>
+                <td>0.16</td>
+                <td>-0.01</td>
+                <td>-0.19</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>19</td>
+                <td>BAG CHICKEN SMALL (OR)</td>
+                <td>1</td>
+                <td>0.28</td>
+                <td>51.83</td>
+                <td>-0.04</td>
+                <td>0.00</td>
+                <td>-0.06</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>20</td>
+                <td>BAG CARRIER LARGE</td>
+                <td>1</td>
+                <td>4.06</td>
+                <td>22.83</td>
+                <td>1.98</td>
+                <td>1.05</td>
+                <td>0.11</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>21</td>
+                <td>BOX RICEBOX (2017)</td>
+                <td>1</td>
+                <td>0.25</td>
+                <td>37.93</td>
+                <td>0.23</td>
+                <td>0.17</td>
+                <td>0.11</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>22</td>
+                <td>FORK WOODEN 16CM</td>
+                <td>1</td>
+                <td>0.51</td>
+                <td>12.09</td>
+                <td>0.03</td>
+                <td>0.00</td>
+                <td>-0.12</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>23</td>
+                <td>HASH BROWN</td>
+                <td>1</td>
+                <td>0.93</td>
+                <td>18.38</td>
+                <td>0.58</td>
+                <td>0.37</td>
+                <td>0.15</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>24</td>
+                <td>CORN COBETTES</td>
+                <td>2</td>
+                <td>4.42</td>
+                <td>16.71</td>
+                <td>1.09</td>
+                <td>0.07</td>
+                <td>-0.95</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>25</td>
+                <td>BUN MINI FILLET</td>
+                <td>1</td>
+                <td>1.45</td>
+                <td>12.33</td>
+                <td>0.58</td>
+                <td>0.25</td>
+                <td>-0.09</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>26</td>
+                <td>CHICKEN HOTWINGS ISP (60X6)</td>
+                <td>6</td>
+                <td>18.61</td>
+                <td>41.04</td>
+                <td>6.33</td>
+                <td>2.05</td>
+                <td>-2.24</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>27</td>
+                <td>CHICKEN POPCORN (2021 Recipe)</td>
+                <td>2</td>
+                <td>6.26</td>
+                <td>65.72</td>
+                <td>3.29</td>
+                <td>1.85</td>
+                <td>0.41</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>28</td>
+                <td>COOKIE CHOCOLATE CHUNK</td>
+                <td>1</td>
+                <td>0.66</td>
+                <td>35.53</td>
+                <td>0.54</td>
+                <td>0.39</td>
+                <td>0.24</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>29</td>
+                <td>CHICKEN ZINGER ISP</td>
+                <td>1</td>
+                <td>3.52</td>
+                <td>62.93</td>
+                <td>3</td>
+                <td>2.19</td>
+                <td>1.38</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>30</td>
+                <td>CHICKEN FILLETS</td>
+                <td>1</td>
+                <td>4.38</td>
+                <td>66.55</td>
+                <td>3.83</td>
+                <td>2.82</td>
+                <td>1.81</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>31</td>
+                <td>CHICKEN MINI FILLET</td>
+                <td>3</td>
+                <td>16.98</td>
+                <td>64.48</td>
+                <td>8.33</td>
+                <td>4.42</td>
+                <td>0.51</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>32</td>
+                <td>BUN GLAZED</td>
+                <td>1</td>
+                <td>6.19</td>
+                <td>14.27</td>
+                <td>4.15</td>
+                <td>2.72</td>
+                <td>1.30</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>33</td>
+                <td>FRIES 11X11</td>
+                <td>8</td>
+                <td>31.19</td>
+                <td>17.87</td>
+                <td>14.4</td>
+                <td>7.22</td>
+                <td>0.04</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>34</td>
+                <td>OIL PREMIUM PRESSURE FRYER</td>
+                <td>5</td>
+                <td>0.00</td>
+                <td>36.55</td>
+                <td>9.5</td>
+                <td>4.50</td>
+                <td>-0.50</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>35</td>
+                <td>FRUIT SHOOT BLK / APL</td>
+                <td>1</td>
+                <td>2.25</td>
+                <td>6.38</td>
+                <td>0.54</td>
+                <td>0.02</td>
+                <td>-0.50</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>36</td>
+                <td>CAN TANGO</td>
+                <td>3</td>
+                <td>8.92</td>
+                <td>6.26</td>
+                <td>5.83</td>
+                <td>3.78</td>
+                <td>1.72</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>37</td>
+                <td>BTL PEPSI MAX 1.5L</td>
+                <td>2</td>
+                <td>11.00</td>
+                <td>7.31</td>
+                <td>6.58</td>
+                <td>4.05</td>
+                <td>1.51</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>38</td>
+                <td>BTL TANGO 1.5L</td>
+                <td>3</td>
+                <td>3.33</td>
+                <td>7.31</td>
+                <td>1</td>
+                <td>0.23</td>
+                <td>-0.53</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>39</td>
+                <td>CAN PEPSI MAX</td>
+                <td>3</td>
+                <td>16.58</td>
+                <td>8.26</td>
+                <td>10.25</td>
+                <td>6.43</td>
+                <td>2.62</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>40</td>
+                <td>BTL 7UP FREE 1.5L</td>
+                <td>1</td>
+                <td>2.67</td>
+                <td>7.21</td>
+                <td>1.59</td>
+                <td>0.98</td>
+                <td>0.36</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>41</td>
+                <td>WATER SPRINGBOURNE STILL 500ML</td>
+                <td>1</td>
+                <td>4.83</td>
+                <td>5.2</td>
+                <td>2.88</td>
+                <td>1.77</td>
+                <td>0.66</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>42</td>
+                <td>BIB PEPSI CHERRY MAX (HY)</td>
+                <td>1</td>
+                <td>0.11</td>
+                <td>22.28</td>
+                <td>0.49</td>
+                <td>0.46</td>
+                <td>0.44</td>
+                <td>Yes</td>
+                </tr>
+<tr>
+                <td>43</td>
+                <td>WATER SPARKLING</td>
+                <td>1</td>
+                <td>0.63</td>
+                <td>5.38</td>
+                <td>0.67</td>
+                <td>0.52</td>
+                <td>0.38</td>
+                <td>Yes</td>
+                </tr>
+
+    <tr>
+    <th>Total ex VAT</th>
+    <th>2120.59</th>
+    <th></th>
+    <th>Total Price</th>
+    <th>2544.71</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    </tr>
+</table>
+    </body>
+    </html>

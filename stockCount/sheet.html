@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    .main__div {
+        display:flex;
+        position:relative;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height:100px;
+    }
+
+    @media print {
+        .main__div {
+            display: none;
+        }
+    }
+    table {
+        display: inline-block;
+        width:684px;
+        Z-INDEX: 101;
+        LEFT: 8px;
+        POSITION: absolute;
+        TOP: 11px"
+    }
+
+    td {
+        height:30px
+    }
+
+    th__product {
+        width: 140px;
+    }
+
+    th__box {
+        width: 45px;
+    }
+
+    
+        .product {
+            border: 1px solid black;
+        }
+
+        .box {
+            border: 1px solid black;
+            width: 45px;
+            background-color:rgba(200,200,200,0.6);
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+            border-right-style: dotted;
+        }
+
+        .write__box {
+            border: 1px solid black;
+            border-left-style: dotted ;
+            width: 45px;
+        }
+        .print-button {
+            position: fixed;
+            width:100px;
+        }
+
+        @media print {
+            .print-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="main__div">
+<button class="print-button" onclick="window.print()">Print</button>
+</div>
+    <table>
+    <thead>
+    <tr>
+    <th class="th__product">Product</th>
+    <th class="th__box" colspan="2">Box</th>
+    <th class="th__box" colspan="2">Inner</th>
+    <th class="th__box" colspan="2">Pieces</th>
+    </tr>
+    </thead>
+    <tbody><tr>
+            <td class="product">CHICKEN FILLETS</td>
+            <td class="box">3</td><td class="write__box"></td>
+            <td class="box">5</td><td class="write__box"></td>
+            <td class="box">16</td><td class="write__box"></td>
+            <td><input type="checkbox"></td>
+<tr>
+            <td class="product">CHICKEN FROZEN - (Heads)</td>
+            <td class="box">6</td><td class="write__box"></td>
+            <td class="box">0</td><td class="write__box"></td>
+            <td class="box">0</td><td class="write__box"></td>
+            <td><input type="checkbox"></td>
+<tr>
+            <td class="product">CHICKEN HOTWINGS ISP</td>
+            <td class="box">10</td><td class="write__box"></td>
+            <td class="box">0</td><td class="write__box"></td>
+            <td class="box">8</td><td class="write__box"></td>
+            <td><input type="checkbox"></td>
+<tr>
+            <td class="product">CHICKEN MINI FILLET</td>
+            <td class="box">11</td><td class="write__box"></td>
+            <td class="box">4</td><td class="write__box"></td>
+            <td class="box">37</td><td class="write__box"></td>
+            <td><input type="checkbox"></td>
+<tr>
+            <td class="product">CHICKEN OR FILLET BITES FTF</td>
+            <td class="box">2</td><td class="write__box"></td>
+            <td class="box">1</td><td class="write__box"></td>
+            <td class="box">26</td><td class="write__box"></td>
+            <td><input type="checkbox"></td>
+<tr>
+            <td class="product">CHICKEN ORIGINAL (Pieces)</td>
+            <td class="box">13</td><td class="write__box"></td>
+            <td class="box">0</td><td class="write__box"></td>
+            <td class="box">16</td><td class="write__box"></td>
+            <td><input type="checkbox"></td>
+<tr>
+            <td class="product">CHICKEN POPCORN</td>
+            <td class="box">5</td><td class="write__box"></td>
+            <td class="box">4</td><td class="write__box"></td>
+            <td class="box">45</td><td class="write__box"></td>
+            <td><input type="checkbox"></td>
+<tr>
+            <td class="product">CHICKEN ZINGER ISP</td>
+            <td class="box">3</td><td class="write__box"></td>
+            <td class="box">5</td><td class="write__box"></td>
+            <td class="box">6</td><td class="write__box"></td>
+            <td><input type="checkbox"></td>
+<tr>
+            <td class="product">FRIES 11X11</td>
+            <td class="box">24</td><td class="write__box"></td>
+            <td class="box">4.33</td><td class="write__box"></td>
+            <td class="box">0</td><td class="write__box"></td>
+            <td><input type="checkbox"></td>
+<tr>
+            <td class="product">VEGAN FILLET</td>
+            <td class="box">1</td><td class="write__box"></td>
+            <td class="box">2</td><td class="write__box"></td>
+            <td class="box">9</td><td class="write__box"></td>
+            <td><input type="checkbox"></td>
+ </tbody>
+        </table>
+        </body>
+        </html>
+       

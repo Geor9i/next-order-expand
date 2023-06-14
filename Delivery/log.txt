@@ -1,0 +1,65 @@
+let data = `CHICKEN ORIGINAL: 4
+SALAD ICEBERG: 1
+LETTUCE APOLLO MIX: 1
+WHITE CHOCLATE PIECES (Milkybar): 1
+PICKLED SLAW: 1
+BEANS LARGE PREPOTTED: 2
+BEANS REGULAR PREPOTTED: 1
+FLOUR 3 STEP: 6
+ICE CREAM MIX LS: 1
+MILK MILLAC MAID (MILK POT): 1
+SAUCE CHOCOLATE (KRUSHEMS + SUNDAE): 1
+TOPPING OREO CRUMB: 1
+SAUCE KANSAS BBQ (BITES): 1
+COFFEE BEAN (KB): 1
+STRAWS PAPER (6mm): 1
+CARRIER 2 CUP: 1
+CUP 16OZ: 1
+WETNAPS: 1
+BAG CHICKEN SMALL (OR): 1
+BAG CARRIER LARGE: 1
+BOX RICEBOX (2017): 1
+FORK WOODEN 16CM: 1
+HASH BROWN: 1
+CORN COBETTES: 2
+BUN MINI FILLET: 1
+CHICKEN HOTWINGS ISP (60X6): 6
+CHICKEN POPCORN (2021 Recipe): 2
+COOKIE CHOCOLATE CHUNK: 1
+CHICKEN ZINGER ISP: 1
+CHICKEN FILLETS: 1
+CHICKEN MINI FILLET: 3
+BUN GLAZED: 1
+FRIES 11X11: 8
+OIL PREMIUM PRESSURE FRYER: 5
+FRUIT SHOOT BLK / APL: 1
+CAN TANGO: 3
+BTL PEPSI MAX 1.5L: 2
+BTL TANGO 1.5L: 3
+CAN PEPSI MAX: 3
+BTL 7UP FREE 1.5L: 1
+WATER SPRINGBOURNE STILL 500ML: 1
+BIB PEPSI CHERRY MAX (HY): 1
+WATER SPARKLING: 1
+`;
+
+tableElement = document.querySelectorAll("#ctl00_ph_otd_geo_ctl00 tbody tr")
+data = data.split(`\n`).filter(el => el.length > 1);
+let products = {};
+
+for (let entry of data) {
+    let [product, value] = entry.split(": ");
+    value = Number(value);
+    products[product] = value;
+}
+
+for (let row = 1; row < tableElement.length; row++) {
+    let productElement = tableElement[row].cells[1].innerText;
+    let inputElement = tableElement[row].cells[3].firstElementChild;
+    if (products.hasOwnProperty(productElement)) {
+        inputElement.value = products[productElement];
+        delete products[productElement];
+    }
+    
+}
+    

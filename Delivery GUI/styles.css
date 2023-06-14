@@ -1,0 +1,147 @@
+body {
+    background-color: rgb(247, 247, 247);
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+
+}
+#input-form-container {
+    display: block;
+    position: relative;
+    background-color: rgb(235, 233, 233);
+    margin-left: auto;
+    margin-right: auto;
+    top: 50px;
+    width: 100vw;
+    height: 100vh;
+    /* box-shadow: -20px 20px 50px 5px rgb(163, 163, 163); */
+    /* border: 1px solid black; */
+}
+
+#title-container {
+    /* border: 1px solid rgb(255, 137, 2); */
+    background-color: rgb(66,66,66);
+    display: block;
+    position: relative;
+    height: 50px;
+    bottom: 80px;
+}
+
+#title-container:hover {
+    background-color: rgb(90, 90, 90);
+    transition: background-color 0.2s ease-in-out;    
+}
+#title {
+    display: block;
+    position: relative;
+    font-weight:bolder;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: rgb(134, 134, 134);    
+    text-align: center;
+}
+
+#title:hover {
+    color: rgb(214, 214, 214);
+    transition: color 0.2s ease-in-out ;    
+}
+
+/*Below Title  */
+
+#greeting-text {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+#report-input-container {
+    display: block;
+    position: relative;
+    left: 200px;
+    top: 150px;
+    /* border: 1px solid black */
+    /* border-radius: 50px; */
+}
+
+#report-input {
+    display: inline-block;
+    position: relative;
+    resize: none;
+    bottom: 25px;
+    width: 100px;
+    height: 20px;
+    background-color: rgb(90, 90, 90);
+    border: 1px solid rgb(240, 240, 240);
+    transition: background-color 0.2s ease;
+    border-radius: 50%;
+    font-size: 10px;
+    color: rgba(10,10,10,0)
+}
+
+#report-input:focus {
+    outline: none
+}
+
+#report-input-bin {
+    display:block;
+    position: absolute;
+    /* border: 1px solid black; */
+    /* background-color: rgb(105, 105, 105); */
+    /* background-image: linear-gradient(to right, rgb(177, 177, 177) , rgb(216, 216, 216), rgb(109, 108, 108)); */
+    background-color: rgb(66, 66, 66);
+    top: 25px;
+    border-radius: 2px 1px 25px 25px;
+    width: 104px;
+    height: 100px;
+}
+
+#report-input-arrow {
+    display: inline-block;
+    position: relative;
+    bottom: 25px;
+    width: 0; 
+    height: 0; 
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right:15px solid rgb(90, 90, 90); 
+}
+
+#report-input-guide {
+     display: inline-block;
+    position: relative;
+    right: 4px;
+    bottom: 50px;
+    width: 250px; 
+    height: 60px; 
+    border-radius: 2px 25px 25px 2px;
+    background-color: rgb(66,66,66);
+}
+
+#report-input-sign {
+    display: block;
+    position: relative;
+    left: 10px;
+    color: rgb(170, 170, 170);
+    font-size: 20px;
+}
+
+#report-harvest-check {
+display: none;
+overflow: auto;
+position: relative;
+/* border: 1px solid black; */
+bottom: 130px;
+left: 400px;
+
+}
+
+#report-harvest-check-area {
+    /* pointer-events: none; */
+    background-color: #fcfcfc;
+    font-size: 40px;
+    color: rgb(73, 73, 73);
+    width: 200px;
+    resize: none;
+    height: 100px;
+  }
+   
